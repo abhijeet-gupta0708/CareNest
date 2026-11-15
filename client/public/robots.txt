@@ -1,0 +1,3 @@
+# CareNest is a private care-coordination demo. Do not index it.
+User-agent: *
+Disallow: /
