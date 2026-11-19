@@ -1,5 +1,7 @@
 node_modules/
 dist/
+/public/
+.vercel/
 data/
 *.local
 .env
@@ -8,3 +10,9 @@ data/
 *.log
 .DS_Store
 coverage/
+
+# Installed agent skills: reproducible from skills-lock.json (source + commit + hash).
+.agents/skills/
+
+# Separate repository with its own remote; never vendor it into this one.
+Gemini_App/
