@@ -84,3 +84,17 @@ node --import tsx --test server/test/reminders.test.ts
 - SQLite is opened once at module load; tests must set `DATABASE_FILE` before any dynamic import.
 - The in-process reminder scheduler runs only in the server process; tests call the queue/dispatch functions directly.
 - Demo data changes on every seed (new IDs), so never hard-code demo profile or medication IDs in code or docs.
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live as local markdown under `.scratch/<feature>/`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), recorded as a `Status:` line. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: root `GLOSSARY.md` plus `docs/adr/`. See `docs/agents/domain.md`.
